@@ -1,0 +1,15 @@
+Copyright (c) 2026 Ryan Saturno - All Rights Reserved
+
+All rights reserved.
+
+This software and associated documentation files (the "Software") are the exclusive property of the author.
+
+Permission is granted to view this code for personal, educational, and portfolio review purposes only.
+
+You are NOT allowed to use, copy, modify, or distribute this software, in whole or in part, without explicit prior written permission from the owner.
+
+Commercial use is strictly prohibited without authorization from the author.
+
+Any use beyond viewing and studying requires explicit written permission from the author.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
