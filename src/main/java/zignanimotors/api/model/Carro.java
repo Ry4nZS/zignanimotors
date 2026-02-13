@@ -17,23 +17,23 @@ import zignanimotors.api.enums.TipoCombustivel;
 public class Carro {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long Id;
 
-    private String nome;
+    private String Nome;
 
-    private String modelo;
+    private String Modelo;
 
-    private String descricao;
+    private String Descricao;
 
-    private String ano;
+    private String Ano;
 
-    private double km;
+    private double Km;
 
     @Enumerated(EnumType.STRING)
-    private TipoCombustivel combustivel;
+    private TipoCombustivel Combustivel;
 
-    private String cor;
+    private String Cor;
 
-    private String finalplaca;
+    private String Finalplaca;
 
 }
