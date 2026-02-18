@@ -10,7 +10,7 @@ Foi desenvolvida como projeto para consolidar conhecimentos em backend com Java 
 
 ⚙️ Funcionalidades
 
-✔ Cadastrar carros
+<p>✔ Cadastrar carros</p>
 ✔ Listar carros com paginação
 ✔ Atualizar informações
 ✔ Exclusão lógica (inativação)
