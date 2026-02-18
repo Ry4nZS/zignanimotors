@@ -4,8 +4,9 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import zignanimotors.api.enums.TipoCombustivel;
+import zignanimotors.api.model.Carro;
 
-public record CarroDTO(
+public record cadastrarCarroDTO(
 
         @NotBlank
         String nome,
@@ -21,7 +22,7 @@ public record CarroDTO(
         String ano,
 
         @NotNull
-        double km,
+        Double km,
 
         @NotNull
         TipoCombustivel combustivel,
@@ -30,5 +31,11 @@ public record CarroDTO(
         String cor,
 
         @NotBlank
-        String finalplaca) {
+        String finalplaca
+
+        ){
+
+        public cadastrarCarroDTO(Carro carro){
+                this(carro.getNome(), carro.getModelo(), carro.getDescricao(), carro.getAno(), carro.getKm(), carro.getCombustivel(), carro.getCor(), carro.getFinalplaca());
+        }
 }
