@@ -1,84 +1,113 @@
-🚗 Zignani Motors API
+<h1>🚗 Zignani Motors API</h1>
 
-API REST desenvolvida em Java com Spring Boot para gerenciamento de carros, simulando o backend de uma vitrine automotiva (estilo marketplace).
-O projeto foi criado com foco em aplicar boas práticas de arquitetura, organização em camadas e persistência de dados.
+<p>
+API REST desenvolvida em Java com Spring Boot para gerenciamento de carros,
+simulando o backend de uma vitrine automotiva (estilo marketplace).
+O projeto foi criado com foco em aplicar boas práticas de arquitetura,
+organização em camadas e persistência de dados.
+</p>
 
-🚀 Sobre o projeto
+<h2>🚀 Sobre o projeto</h2>
 
-Esta API permite o gerenciamento completo de veículos, incluindo cadastro, listagem, atualização e inativação.
-Foi desenvolvida como projeto para consolidar conhecimentos em backend com Java e Spring.
+<p>
+Esta API permite o gerenciamento completo de veículos, incluindo cadastro,
+listagem, atualização e inativação.
+Foi desenvolvida como projeto para consolidar conhecimentos em backend
+com Java e Spring.
+</p>
 
-⚙️ Funcionalidades
+<h2>⚙️ Funcionalidades</h2>
 
-<p>✔ Cadastrar carros</p>
-✔ Listar carros com paginação
-✔ Atualizar informações
-✔ Exclusão lógica (inativação)
-✔ Validação de dados com Bean Validation
-✔ Versionamento do banco com Flyway
+<ul>
+  <li>✔ Cadastrar carros</li>
+  <li>✔ Listar carros com paginação</li>
+  <li>✔ Atualizar informações</li>
+  <li>✔ Exclusão lógica (inativação)</li>
+  <li>✔ Validação de dados com Bean Validation</li>
+  <li>✔ Versionamento do banco com Flyway</li>
+</ul>
 
-🏗 Arquitetura
+<h2>🏗 Arquitetura</h2>
 
-O projeto segue o padrão MVC adaptado para APIs REST:
+<p>O projeto segue o padrão MVC adaptado para APIs REST:</p>
 
+<pre>
 controller/   → Endpoints e entrada de requisições
 service/      → Regras de negócio
 repository/   → Acesso ao banco (JPA)
 model/        → Entidades persistidas
 dto/          → Objetos de entrada/saída da API
+</pre>
 
-DTOs separados por responsabilidade:
+<p><strong>DTOs separados por responsabilidade:</strong></p>
 
-Cadastro de carro
-Listagem de carros
-Atualização de dados
+<ul>
+  <li>Cadastro de carro</li>
+  <li>Listagem de carros</li>
+  <li>Atualização de dados</li>
+</ul>
 
-💻 Tecnologias utilizadas
+<h2>💻 Tecnologias utilizadas</h2>
 
-Java
-Spring Boot
-Spring Data JPA
-MySQL
-Flyway (migrations de banco)
-Bean Validation
-Maven
-Postman (Para realizar requisições na API)
+<ul>
+  <li>Java</li>
+  <li>Spring Boot</li>
+  <li>Spring Data JPA</li>
+  <li>MySQL</li>
+  <li>Flyway (migrations de banco)</li>
+  <li>Bean Validation</li>
+  <li>Maven</li>
+  <li>Postman (para realizar requisições na API)</li>
+</ul>
 
-📊 Estrutura do banco
+<h2>📊 Estrutura do banco</h2>
 
-A estrutura do banco é controlada por migrations usando Flyway, garantindo versionamento e consistência do schema.
+<p>
+A estrutura do banco é controlada por migrations usando Flyway,
+garantindo versionamento e consistência do schema.
+</p>
 
-🔄 Regras de negócio implementadas
+<h2>🔄 Regras de negócio implementadas</h2>
 
-Carros são cadastrados como não vendidos por padrão
-Exclusão é feita de forma lógica, preservando histórico
-Atualizações permitem modificação parcial dos dados
-Dados recebidos pela API passam por validação automática
+<ul>
+  <li>Carros são cadastrados como não vendidos por padrão</li>
+  <li>Exclusão é feita de forma lógica, preservando histórico</li>
+  <li>Atualizações permitem modificação parcial dos dados</li>
+  <li>Dados recebidos pela API passam por validação automática</li>
+</ul>
 
-▶️ Como rodar o projeto
+<h2>▶️ Como rodar o projeto</h2>
 
-Clone o repositório:
+<p><strong>Clone o repositório:</strong></p>
 
+<pre>
 1 - git clone https://github.com/Ry4nZS/Zignani_Motors_API
 2 - Configure o banco de dados no arquivo:
-src/main/resources/application.properties
+    src/main/resources/application.properties
 3 - Execute a aplicação:
-mvn spring-boot:run
-4 - A API ficará disponível em: http://localhost:8080
+    mvn spring-boot:run
+4 - A API ficará disponível em:
+    http://localhost:8080
+</pre>
 
-📡 Endpoints principais
+<h2>📡 Endpoints principais</h2>
+
+<pre>
 POST   /carros        → Cadastrar carro
 GET    /carros        → Listar carros (paginado)
 PUT    /carros        → Atualizar carro
 DELETE /carros/{id}   → Inativar carro
+</pre>
 
-📈 Próximas melhorias (roadmap)
+<h2>📈 Próximas melhorias (roadmap)</h2>
 
-Autenticação com Spring Security
-Controle de acesso (admin)
-Upload de imagens dos veículos
-Deploy em VPS
-Integração com frontend
+<ul>
+  <li>Autenticação com Spring Security</li>
+  <li>Controle de acesso (admin)</li>
+  <li>Upload de imagens dos veículos</li>
+  <li>Deploy em VPS</li>
+  <li>Integração com frontend</li>
+</ul>
 
-👨‍💻 Autor
+<h2>Autor</h2>
 - [@Ryan](https://www.github.com/Ry4nZS)
